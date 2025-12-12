@@ -1,0 +1,24 @@
+resources:
+  jobs:
+    New_Job_Dec_10_2025_12_36_PM:
+      name: New Job Dec 10, 2025, 12:36 PM
+      tasks:
+        - task_key: 01_bronze_ingestion
+          notebook_task:
+            notebook_path: /Workspace/Proyect/01_bronze_ingestion
+            source: WORKSPACE
+        - task_key: 02_silver_transformation
+          depends_on:
+            - task_key: 01_bronze_ingestion
+          notebook_task:
+            notebook_path: /Workspace/Proyect/02_silver_transformation
+            source: WORKSPACE
+        - task_key: 03_gold_aggregations
+          depends_on:
+            - task_key: 02_silver_transformation
+          notebook_task:
+            notebook_path: /Workspace/Proyect/03_gold_aggregations
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
