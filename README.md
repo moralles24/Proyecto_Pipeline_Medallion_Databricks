@@ -6,9 +6,9 @@ Este repositorio contiene el desarrollo de un **pipeline ETL** implementado en *
 
 ## 📂 Estructura del Proyecto
 
-- **`/docs`** → Documentación del proyecto (metodología, conclusiones, limitaciones).
-- **`/folder`** → Codigo de las etapas del Medallion y las visualizaciones con Pandas.
-- **`/jobs`** → Código del Job principal en Databricks.   
+- **`/Docs`** → Documentación del proyecto (metodología, conclusiones, limitaciones).
+- **`/Folder`** → Codigo de las etapas del Medallion y las visualizaciones con Pandas.
+- **`/Job`** → Código del Job principal en Databricks.   
 - **`Diagrama de Arquitectura`** → Visualizacion sobre la estructura del Proyecto. 
 
 ---
